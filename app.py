@@ -6,7 +6,7 @@ from fastapi import FastAPI
 
 app = FastAPI(title = 'New Cars Price Prediction')
 
-model = load(pathlib.Path('pakwheels-v1.joblib'))
+model = load(pathlib.Path('./model/pakwheels-v1.joblib'))
 
 class InputData(BaseModel):
     model_year:int=2017
