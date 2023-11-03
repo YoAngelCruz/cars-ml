@@ -6,7 +6,7 @@ from joblib import dump
 import pandas as pd
 import pathlib
 
-df = pd.read_csv(pathlib.Path('../data/data_pakwheels_15.csv'))
+df = pd.read_csv(pathlib.Path('./data/wheels.csv'))
 y = df.pop('price')
 X = df
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2)
