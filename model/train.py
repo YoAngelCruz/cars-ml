@@ -18,5 +18,5 @@ clf = RandomForestClassifier(n_estimators = 50,
 clf.fit(X_train, y_train)
 print ('Saving model..')
 
-dump(clf, pathlib.Path('./model/pakwheels-v1.joblib'))
+dump(clf, pathlib.Path('pakwheels-v1.joblib'))
 
