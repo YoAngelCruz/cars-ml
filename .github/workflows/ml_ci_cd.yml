@@ -21,6 +21,8 @@ jobs:
       run: cat data/wheels.csv
     - name: train model
       run: python model/train.py
+    - name: ls
+      run: ls
     - name: docker build
       run: docker build -t ${{secrets.DOCKER_USER}}/${{secrets.MODEL_NAME}}:${{github.event.client_payload.sha}} .
     - name: docker login
