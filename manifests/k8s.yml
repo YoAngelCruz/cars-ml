@@ -19,6 +19,11 @@ spec:
         image: docker.io/{docker_user}/{model_name}:{github.sha}
         ports:
         - containerPort: 80
+        resources:
+          limits:
+            memory: 4096Mi
+          requests:
+            memory: 4096Mi
 ---
 apiVersion: v1
 kind: Service
