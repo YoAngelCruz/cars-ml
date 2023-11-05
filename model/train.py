@@ -12,11 +12,11 @@ X = df
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2)
 
 print ('Training model.. ')
-clf = RandomForestClassifier(n_estimators = 50,
-                            max_depth=40,
+clf = RandomForestClassifier(n_estimators = 20,
+                            max_depth=15,
                             random_state=0)
 clf.fit(X_train, y_train)
 print ('Saving model..')
 
-dump(clf, pathlib.Path('model/pakwheels-v1.joblib'))
+dump(clf, pathlib.Path('model/pakwheels-v2.joblib'))
 

@@ -1,13 +1,13 @@
 import requests
 body = {
-    "model_year":2017,
+    "model_year":2019,
     "mileage":9869,
     "engine_capacity":1000,
-    "company_name_category":0,
-    "model_name_category":0,
+    "company_name_category":2,
+    "model_name_category":5,
     "location_category":0,
-    "engine_type_category":0,
-    "color_category":0,
+    "engine_type_category":1,
+    "color_category":2,
     "assembly_category":0,
     "body_type_category":0,
     "transmission_type_category":0,
